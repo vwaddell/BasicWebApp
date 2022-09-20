@@ -30,8 +30,4 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("what is your name"), containsString("MyTeam"));
     }
 
-    @Test
-    public void knowsZero() throws Exception {
-        assertThat(queryProcessor.process("0"), contains(0/0));
-    }
 }
